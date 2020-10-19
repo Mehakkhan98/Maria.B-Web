@@ -3,7 +3,7 @@ import React from 'react'
 import data from '../Json';
 import Card from '../Components/ZoomCard'
 import Contact from '../Components/BackContact'
-import Modal from '../Modal/Modal'
+import Modal from '../Modal/SideModal'
 const filtered=[]
 const Size=["XS","S","M","L","XL"]
 export default class App extends  React.Component{
@@ -18,6 +18,7 @@ export default class App extends  React.Component{
 
       
     }
+   
    
     componentDidMount()
     {
@@ -56,7 +57,7 @@ render()
        height:'100%',
        width:'100%',
        }}
-       onClick={()=>{this.setState({opendrawer:false})}}>
+      >
            <Contact/>
            <div style={row}>
                <div>
@@ -130,16 +131,17 @@ render()
                    onMouseOver={()=>{this.setState({bg:true})}}
                    onMouseOut={()=>{this.setState({bg:false})}}
                   onClick={() => {
+                      
                   this.setState({opendrawer:true})
     }}>
           Add to Bag
         </button>
         {
-            this.state.opendrawer===true?<Modal/>:null 
+            this.state.opendrawer===true?<Modal/>:null
         }
                
                
-                
+               {/* <Modal/> */}
               <div style={row}>
                   <p style={New}>Disclaimer </p>
                   <p style={text1}>Product color may vary slightly due to photographic lighting </p>

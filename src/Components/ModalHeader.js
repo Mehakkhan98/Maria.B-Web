@@ -29,7 +29,7 @@ render()
     
      <CancelIcon  onClick={()=>this.props.cancel()}
      style={{ color:'rgb(141, 105, 29)',
-                     fontSize:14,marginLeft:130
+                     fontSize:14,marginLeft:150
                           }}/>
   
                
