@@ -8,7 +8,7 @@ render()
         
         
        <div>
-           <p>I am login screen</p>
+           <p>Hi!I am login screen</p>
            
        </div>
        
